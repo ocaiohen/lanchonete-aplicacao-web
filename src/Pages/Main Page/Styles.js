@@ -26,7 +26,7 @@ export const OrderInput = styled.input`
     border-radius: 14px;
     height: 55px;
     font-size: 18px;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.27);
     color: white;
     border: none;
 `
