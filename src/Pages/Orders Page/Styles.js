@@ -19,28 +19,11 @@ export const MainContent = styled.div`
 export const H1 = styled.h1`
     font-size: 28px;
 `
-export const OrderInput = styled.input`
-    width: 100%;
-    padding: 19px;
-    margin-bottom: 20px;
-    border-radius: 14px;
-    height: 55px;
-    font-size: 18px;
-    background-color: rgba(255,255,255,0.27);
-    color: white;
-    border: none;
-`
-export const InputLabel = styled.label`
-    width: 100%;
-    margin-left: 40px;
-    font-size: 18px;
-    font-weight: 600;
-`
-export const OrderButton = styled.button`
+export const GoBackButton = styled.button`
     width: 100%;
     padding: 19px;
     margin-top: 30px;
-    background-color: #D93856;
+    background-color: rgba(255,255,255, 0.15);
     color: white;
     font-weight: 600;
     border: none;

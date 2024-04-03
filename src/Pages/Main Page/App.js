@@ -1,5 +1,5 @@
-// import { useNavigate } from "react-router-dom";
-import React, {useState, useRef} from "react"
+import { useNavigate } from "react-router-dom";
+import React, {useRef} from "react"
 import {v4 as uuidv4} from "uuid"
 import axios from "axios"
 import 
@@ -16,7 +16,11 @@ import logo from "../../Assets/logo-logotipo-lanche-hamburguer-buguer-pronta-ent
 function App() {
   let orderInput = useRef()
   let nameInput = useRef()
+  const navigate = useNavigate()
   
+  const goToOrders = () =>{
+    navigate("/pedidos")
+  }
   const addNewOrder = async () =>{
     if(orderInput.current.value && nameInput.current.value){
       const id = uuidv4()
@@ -28,6 +32,7 @@ function App() {
         order : order,
         name : name
       })
+      goToOrders()
     }
   }
   return (
