@@ -29,6 +29,7 @@ export const OrderInput = styled.input`
     background-color: rgba(255,255,255,0.27);
     color: white;
     border: none;
+    outline: none;
 `
 export const InputLabel = styled.label`
     width: 100%;
@@ -45,6 +46,25 @@ export const OrderButton = styled.button`
     font-weight: 600;
     border: none;
     cursor: pointer;
+    font-size: 16px;
+    &:hover{
+        opacity: 0.9;
+    }
+    &:active{
+        opacity: 0.7;
+    }
+`
+export const GoToOrdersButton = styled.button`
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
     font-size: 16px;
     &:hover{
         opacity: 0.9;

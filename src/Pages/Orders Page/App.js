@@ -29,7 +29,7 @@ function App() {
     },[])
 
     const deleteUser = async (id) =>{
-        axios.delete(`http://localhost:3001/documents/${id}`)
+        await axios.delete(`http://localhost:3001/documents/${id}`)
         const {data: newOrders} = await axios.get("http://localhost:3001/documents")
         setOrders(newOrders)
     }

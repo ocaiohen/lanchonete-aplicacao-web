@@ -10,9 +10,11 @@ import
   OrderInput,
   InputLabel,
   OrderButton,
+  GoToOrdersButton
 } 
 from "./Styles.js";
 import logo from "../../Assets/logo-logotipo-lanche-hamburguer-buguer-pronta-entrega-comida-de-rua.webp"
+import ArrowImage from "../../Assets/Arrow 1.png"
 function App() {
   let orderInput = useRef()
   let nameInput = useRef()
@@ -37,7 +39,7 @@ function App() {
   }
   return (
     <MainContainer>
-      <img height = "300px" src = {logo}></img>
+      <img height = "200px" src = {logo}></img>
       <H1>Faça seu pedido!</H1>
       <MainContent>
       
@@ -47,6 +49,8 @@ function App() {
         <OrderInput ref = {nameInput} placeholder = "Fulano de Tal" id = "client-input"></OrderInput>
 
         <OrderButton onClick={addNewOrder}>Novo Pedido</OrderButton>
+
+        <GoToOrdersButton onClick={goToOrders}>Ir para pedidos<img alt = "seta" src={ArrowImage}></img></GoToOrdersButton>
       </MainContent>
     </MainContainer>
     
